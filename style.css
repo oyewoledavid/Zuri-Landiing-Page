@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Open Sans', sans-serif
+  font-family: "Open Sans", sans-serif;
 }
 main {
-  
   padding-bottom: 10em;
 }
-h2, h3{
-  font-family: 'Poppins', sans-serif;
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 .top {
@@ -56,7 +56,7 @@ h2, h3{
   background-color: hsl(322, 94%, 50%);
   color: hsl(193, 100%, 96%);
 }
-.hero-btn:hover{
+.hero-btn:hover {
   background-color: hsl(322, 100%, 66%);
 }
 .hero-sect {
@@ -113,67 +113,225 @@ h2, h3{
   margin-top: 20px;
   padding: 1em 2em 8em;
 }
-.card {
+ .card {
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
   width: 40%;
   height: 9em;
   margin: 0 14em 0 20em;
-  position: relative;
-  z-index: 2;
-  top: -17em;
+   position: relative; 
+   z-index: 2; 
+  top: -17em; 
   padding: 0 3em;
   background-color: hsl(193, 100%, 96%);
-}
-.card-btn{
+} 
+
+.card-btn {
   background-color: hsl(322, 94%, 50%);
-  color: hsl(193, 100%, 96%);;
+  color: hsl(193, 100%, 96%);
   height: 3em;
   width: 50%;
   border: none;
   border-radius: 20px;
   margin-top: 1.5em;
 }
-.card-btn:hover{
+.card-btn:hover {
   background-color: hsl(322, 100%, 66%);
 }
-.btn-head{
+.btn-head {
   margin-top: 1.5em;
 }
-#bottom{
+#bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 5em;
   padding-top: 6em;
 }
-.bottom-left{
+.bottom-left {
   width: 25%;
 }
-.contact{
+.contact {
   margin-bottom: 1em;
 }
-.more{
+.more {
   margin-bottom: 1em;
 }
-.copy{
+.copy {
   margin-left: 75%;
 }
-footer{
+footer {
   background-color: hsl(192, 100%, 9%);
   color: hsl(193, 100%, 96%);
   padding-bottom: 3em;
   position: relative;
   top: -20em;
-
 }
-.fa-brands{
+.fa-brands {
   padding: 5px;
   border: 1px solid gray;
   border-radius: 50%;
   margin-left: 5px;
 }
-.fa-brands:hover{
+.fa-brands:hover {
   background-color: hsl(322, 100%, 66%);
+}
+@media screen and (min-width: 375px) and (max-width: 475px) {
+  body {
+    width: 100vw;
+  }
+  #hero {
+    width: 100vw;
+    background: hsl(193, 100%, 96%) url(bg-hero-mobile.svg);
+    padding: 1em;
+  }
+
+  .hero-sect {
+    flex-direction: column;
+  }
+  .mock-up {
+    width: 300px;
+    margin: 3em auto 1em auto;
+  }
+
+  .top-btn {
+    width: 7em;
+    height: 1.5em;
+  }
+
+  .hero-h2 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .hero-p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .hero-btn {
+    width: 60%;
+    margin: auto;
+    height: 2.5em;
+  }
+  .major {
+    margin: 0 1em;
+  }
+  .grow-head {
+    width: 50%;
+    margin: 3em auto 1em auto;
+  }
+  .grow-p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    line-height: 20px;
+  }
+  .grow-image {
+    width: 300px;
+  }
+  #grow {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 2em 0;
+    margin-top: 3em;
+    overflow: hidden;
+  }
+  .flow-image {
+    width: 300px;
+  }
+  .flow-head {
+    width: 100%;
+    margin: 3em auto 1em auto;
+  }
+  .flow-p {
+    width: 80%;
+    margin: auto;
+    padding-left: 0;
+    text-align: center;
+  }
+  #flow {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 0;
+    margin-top: 1.5em;
+    overflow: hidden;
+  }
+  .user-image {
+    width: 300px;
+  }
+  .user-head {
+    width: 50%;
+    margin: 3em auto 1em auto;
+  }
+  .user-p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    line-height: 20px;
+  }
+  #user {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 2em 0;
+    margin-top: 1.5em;
+    overflow: hidden;
+  }
+  .card {
+    text-align: center;
+    width: 90%;
+    height: 11em;
+    position: relative;
+    top: 4em;
+    z-index: 2;
+    right: 19em;
+    padding: 1em 0;
+  }
+
+  .card-btn {
+    background-color: hsl(322, 94%, 50%);
+    color: hsl(193, 100%, 96%);
+    height: 3em;
+    width: 70%;
+    border: none;
+    margin-top: 2em;
+  }
+
+  footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    padding-bottom: 3em;
+    position: static;
+  }
+  #bottom {
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    margin: 0;
+    padding-top: 6em;
+  }
+  .bottom-left {
+  width: 80%;
+  margin-bottom: 2em;
+}
+.contact {
+  margin-bottom: 1em;
+}
+.more {
+  margin-bottom: 1em;
+}
+.copy {
+  width: 90%;
+  margin: auto;
+}
+.social{
+  width: 30%;
+  margin:2em auto;
+}
 }
