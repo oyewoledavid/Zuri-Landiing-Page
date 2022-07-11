@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 main {
   padding-bottom: 10em;
@@ -133,11 +134,10 @@ h3 {
   border-radius: 10px;
   width: 40%;
   height: 9em;
-  margin: 0 14em 0 20em;
+  margin: auto;
   position: relative;
   z-index: 2;
   bottom: -3em;
-  left: 8em;
   padding: 0 3em;
   background-color: white;
 }
@@ -206,11 +206,13 @@ footer {
 @media screen and (max-width: 875px) {
   body {
     width: 100vw;
+    /* overflow-x: hidden; */
   }
   #hero {
     width: 100vw;
     background: hsl(193, 100%, 96%) url(bg-hero-mobile.svg);
     padding: 1em;
+    overflow-x: hidden;
   }
 
   .hero-sect {
@@ -316,9 +318,7 @@ footer {
     position: relative;
     top: 4em;
     z-index: 2;
-    right: 19em;
     bottom: 0;
-    left: -19em;
     padding: 1em 0;
   }
 
